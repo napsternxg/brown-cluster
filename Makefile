@@ -9,6 +9,9 @@ endif
 wcluster: $(files)
 	g++ -Wall -g -std=c++0x -O3 -o wcluster $(files) -lpthread
 
+wcluster.so: $(files)
+	g++ -Wall -g -std=c++0x -O3 -fPIC -shared -o wcluster.so $(files) -lpthread
+
 %.o: %.cc
 	g++ -Wall -g -O3 -std=c++0x -o $@ -c $< 
 

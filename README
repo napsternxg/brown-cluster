@@ -29,6 +29,11 @@ Run:
   ./wcluster --text input.txt --c 50
   # Output in input-c50-p1.out/paths
 
+Using python:
+    
+    make wcluster.so
+    python wcluster.py --filename README -c 5
+
 ============================================================
 Change Log
 
